@@ -3,6 +3,8 @@ import { MdSend, MdPerson, MdEmail, MdSubject, MdMessage } from 'react-icons/md'
 import {useFormik} from "formik"
 import { contactForm } from '../Schemas';
 import toast from 'react-hot-toast';
+import { useContext } from 'react';
+import { ThemeContext } from '../Context/ThemeContext';
 
 const initialValues = {
   name:"",
@@ -12,6 +14,8 @@ const initialValues = {
 }
 
 function Contact() {
+
+  const {theme} = useContext(ThemeContext)
 
  const {values,errors,touched,handleBlur,handleChange,handleSubmit} =  useFormik({
     initialValues:initialValues,

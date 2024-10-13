@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react'
+import { ThemeContext } from '../Context/ThemeContext'
 
 function Card({ item }) {
+  const {theme} = useContext(ThemeContext)
   return (
-    <div className='bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hover:shadow-xl transition-shadow duration-300 flex flex-col'>
+    <div className=' shadow-xl rounded-lg overflow-hidden border border-black hover:shadow-2xl hover:scale-105 transition  duration-300 flex flex-col'>
       <img src={item.urlToImage} alt={item.title} className='w-full h-48 object-cover' />
 
       <div className='p-4 flex-grow'>
         <h2 className='font-semibold text-lg'>{item.title}</h2>
-        <p className='text-sm text-gray-600 mt-2'>{item.description}</p>
+        <p className='text-md mt-2'>{item.description}</p>
       </div>
 
       <div className='flex flex-row items-center justify-between'>
