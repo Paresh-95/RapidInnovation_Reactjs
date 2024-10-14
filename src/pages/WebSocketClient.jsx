@@ -64,8 +64,8 @@
 
     return (
       // <div className=" shadow-md shadow-black rounded-lg p-6 max-w-2xl mx-auto my-10">
-        <div className={theme==='light'?`shadow-md shadow-black rounded-lg p-6 max-w-2xl h-[480px] mx-auto my-10`:`bg-[#F6F2F0] text-black shadow-md shadow-black rounded-lg p-6 max-w-2xl mx-auto my-10`}>
-        <div className="flex flex-col gap-10 items-center justify-between mb-6  ">
+        <div className={` bg-[#F6F2F0] text-black rounded-lg p-6 max-w-3xl h-[480px] mx-auto my-10 ${theme==='light' ?'shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]':'shadow-[4.0px_8.0px_8.0px_rgba(255,255,255,0.2)]'} `}>
+        <div className="flex flex-col gap-10 items-center justify-between mb-6   ">
           <div>
             <h1 className="text-3xl font-bold ">Task Update Notifications</h1>
             <p className="text-sm mt-1">Implemented using WebSocket</p>

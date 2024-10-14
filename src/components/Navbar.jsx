@@ -96,8 +96,8 @@ function Navbar() {
         </div>
 
         <div
-          className={`md:hidden absolute left-0 top-16 w-full bg-gray-900 transition-transform duration-300 ease-in-out ${
-            isOpen ? "block" : "hidden"
+          className={`md:hidden absolute left-0 top-16 w-full bg-gray-900  text-white transition-transform duration-300 ease-in-out ${
+            isOpen ? "block " : "hidden" 
           } z-10 shadow-lg`}
         >
           <ul className="flex flex-col gap-6 p-4">

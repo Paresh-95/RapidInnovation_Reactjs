@@ -1,5 +1,4 @@
 import {
-  FaBook,
   FaBriefcase,
   FaEnvelope,
   FaGraduationCap,
@@ -17,7 +16,7 @@ export default function About() {
         <section className="text-center mb-20">
           <div className="relative w-32 h-32 mx-auto mb-4">
             <img
-              src="https://lh3.googleusercontent.com/a/ACg8ocKVFlyOzknXwxRpm6EljW6fGpX4M_FERO9MVe95VITsVeQ9KdU=s432-c-no"
+              src="/Paresh.png"
               loading="lazy"
               alt="Your Name"
               layout="fill"

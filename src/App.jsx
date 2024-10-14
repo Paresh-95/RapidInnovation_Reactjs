@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
-import Team from "./pages/Team"
 import Footer from "./components/Footer";
 import Task from "./pages/Task"
 import { useContext } from "react";
@@ -23,7 +22,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
-            <Route path="/team" element={<Team />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/task" element={<Task />}></Route>
             <Route path="/webSocket" element={<WebSocketClient />}></Route>

@@ -6,7 +6,8 @@ import { ThemeContext } from '../Context/ThemeContext'
 function Card({ item }) {
   const {theme} = useContext(ThemeContext)
   return (
-    <div className=' shadow-xl rounded-lg overflow-hidden border border-black hover:shadow-2xl hover:scale-105 transition  duration-300 flex flex-col'>
+    // <div className=' shadow-xl rounded-lg overflow-hidden border border-black hover:shadow-2xl hover:scale-105 transition  duration-300 flex flex-col'>
+    <div className={`${theme==='light' ?'shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] hover:shadow-[8.0px_8.0px_8.0px_rgba(0,0,0,0.38)]':'shadow-[8.0px_8.0px_8.0px_rgba(255,255,255,0.2)] hover:shadow-[4.0px_8.0px_8.0px_rgba(255,255,255,0.2)]'} rounded-lg overflow-hidden   hover:scale-105 transition  duration-300 flex flex-col`}>
       <img src={item.urlToImage} alt={item.title} className='w-full h-48 object-cover' />
 
       <div className='p-4 flex-grow'>
