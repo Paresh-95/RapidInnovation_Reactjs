@@ -63,7 +63,7 @@ RapidInnovation is a React-based application designed to provide a seamless user
 
 The application is hosted and can be accessed at:
 
-- **Hosted URL (Vercel)** : [https://rapid-innovation-nodejs-lpq6xnre2-paresh-95s-projects.vercel.app](https://rapid-innovation-nodejs-lpq6xnre2-paresh-95s-projects.vercel.app)
+- **Hosted URL (Vercel)** : [https://rapid-innovation-react.vercel.app/](https://rapid-innovation-react.vercel.app/)
 
 
 ## License
