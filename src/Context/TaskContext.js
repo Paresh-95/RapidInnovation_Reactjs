@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react';
-import axios from 'axios';  // Import axios
+import axios from 'axios';  
+
 
 const TaskContext = createContext();
 
@@ -10,7 +11,8 @@ const TaskProvider = ({ children }) => {
  
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/v1/getAlltasks');
+      const url = process.env.REACT_APP_BACKEND_API
+      const response = await axios.get(url);
       setTask(response.data.data); 
     } catch (error) {
       console.log('Failed to Fetch Task Data');
@@ -24,7 +26,7 @@ const TaskProvider = ({ children }) => {
   }, []);
 
   return (
-    <TaskContext.Provider value={{ task, loading, fetchTasks }}> {/* Provide loading as well */}
+    <TaskContext.Provider value={{ task, loading, fetchTasks }}> 
       {children}
     </TaskContext.Provider>
   );
