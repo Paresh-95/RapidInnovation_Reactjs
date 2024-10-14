@@ -66,6 +66,12 @@ The application is hosted and can be accessed at:
 - **Hosted URL (Vercel)** : [https://rapid-innovation-react.vercel.app/](https://rapid-innovation-react.vercel.app/)
 
 
+**Note 1**: NewsApi does not support to call their API in Live/Production Enviroment with their free Subscription, So not able to fetch it in Live Enviroment but can be visible in Local Enviroment  
+So in Live Enviroment the Home Page would look Blank 
+
+**Note 2**: WebSocket Client would not work in the Live/Production Enviroment
+but will work in Local Enviroment 
+
 ## License
 
 This project is licensed under the MIT License.
