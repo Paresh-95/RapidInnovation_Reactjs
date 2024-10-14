@@ -11,7 +11,7 @@ const TaskProvider = ({ children }) => {
  
   const fetchTasks = async () => {
     try {
-      const url = process.env.REACT_APP_BACKEND_API
+      const url = `${process.env.REACT_APP_BACKEND_API/dada}/getAllTasks`
       const response = await axios.get(url);
       setTask(response.data.data); 
     } catch (error) {
