@@ -1,4 +1,4 @@
-# RapidInnovation React Application
+# RapidInnovation Assignment ReactJS
 
 ## Description
 
