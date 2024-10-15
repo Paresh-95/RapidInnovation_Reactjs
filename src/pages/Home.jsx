@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Card from "../components/Card";
-import SkeletonCard from '../components/SkeletonCard';
+import SkeletonCard from "../components/SkeletonCard";
+// import Card2 from "../components/Card2"
 
 function Home() {
   const [news, setNews] = useState([]);
@@ -11,13 +12,20 @@ function Home() {
     const fetchNews = async () => {
       try {
         const response = await axios.get(
-          `https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
+          `https://newapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`
         );
         setNews(response.data.articles);
-        console.log(response.data.articles);
         setLoading(false);
       } catch (error) {
-        console.log("Failed to Fetch News Data");
+        try {
+          const response = await axios.get(
+            `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`
+          );
+          setNews(response.data.articles);
+          setLoading(false);
+        } catch (error) {
+          console.log("Error Fetching the data ");
+        }
       }
     };
 

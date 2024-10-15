@@ -7,6 +7,7 @@ function Task() {
   const { task, loading } = useContext(TaskContext);
   const [showPending, setShowPending] = useState(false);
 
+
   if (loading)
     return (
       <div className="container mx-auto p-4 min-h-[500px]">
