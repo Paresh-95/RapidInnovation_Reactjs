@@ -17,7 +17,7 @@ function Navbar() {
         <div className="container flex flex-row justify-between items-center mx-auto">
           <div>
             <NavLink to="/">
-              <img src="/rapidLogo.svg" width={140} alt="Logo" />
+              <img src={theme === 'light'? './rapidLogo.svg ':'./whiteLogo.png '} width={140} alt="Logo" />
             </NavLink>
           </div>
 

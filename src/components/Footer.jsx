@@ -1,14 +1,19 @@
+import { useContext } from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../Context/ThemeContext";
 
 export default function Footer() {
+
+  const {theme} = useContext(ThemeContext)
+
   return (
     <footer className="bg-background">
       <div className="container mx-auto px-4 py-8 md:py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center">
-              <img src="/rapidLogo.svg" width={140} alt="Logo" />
+              <img src={theme === 'light'?'./rapidLogo.svg':'./whiteLogo.png'} width={140} alt="Logo" />
             </Link>
             <p className="mt-4 text-lg font-semibold text-muted-foreground">
               Empowering businesses with innovative solutions since 2023. We're dedicated to creating cutting-edge technology that makes a difference.

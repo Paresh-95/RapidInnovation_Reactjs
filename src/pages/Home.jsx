@@ -14,7 +14,9 @@ function Home() {
     const fetchNews = async () =>{
       try { 
         const response = await axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`);
-        setNews(response.data.articles);        
+        setNews(response.data.articles);    
+        console.log(response.data.articles);
+            
       } catch (error) {
           console.log("Failed to Fetch News Data");
       }finally{
