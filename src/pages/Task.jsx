@@ -1,19 +1,27 @@
 import React, { useContext, useState } from "react";
 import { TaskContext } from "../Context/TaskContext";
 import TaskCard from "../components/TaskCard";
-import Loader from "../components/Loader";
+import SkeletonTaskCard from "../components/SkeletonTaskCard";
 
 function Task() {
   const { task, loading } = useContext(TaskContext);
   const [showPending, setShowPending] = useState(false);
 
-  if (loading) {
+  if (loading)
     return (
-      <div className="flex h-[480px] items-center justify-center">
-        <Loader />
+      <div className="container mx-auto p-4 min-h-[500px]">
+        <h1 className="text-3xl font-bold m-7">Loading Tasks...</h1>
+        <div className="inline-block px-4 py-2 bg-gray-300 animate-pulse rounded-full w-40 h-10"></div>
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-6">
+          {Array(8)
+            .fill(0)
+            .map((_, index) => (
+              <SkeletonTaskCard key={index} />
+            ))}
+        </div>
       </div>
     );
-  }
+
 
   const filteredTasks = showPending
     ? task.filter((t) => t.status === "Pending")
