@@ -14,7 +14,8 @@
       let socket
 
       const connectWebSocket = () => {
-        socket = new WebSocket('wss://websocket-demo-production-d3e6.up.railway.app/')
+        socket = new WebSocket('ws://localhost:4000')
+        //vercel not able to deploy Web Socket services so it will work only in local enviroment
 
         socket.onopen = () => {
           console.log('Connected to WebSocket server')
