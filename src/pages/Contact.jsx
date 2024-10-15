@@ -71,7 +71,7 @@ function Contact() {
                   type="text"
                   id="name"
                   name="name"
-                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
+                  className="block w-full pl-10 pr-3 py-2 border text-black border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
                   placeholder="Your Name"
                   value={values.name}
                   onChange={handleChange}
@@ -97,7 +97,7 @@ function Contact() {
                   type="email"
                   id="email"
                   name="email"
-                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
+                  className="block w-full pl-10 pr-3 py-2 border text-black border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
                   placeholder="your@email.com"
                   value={values.email}
                   onChange={handleChange}
@@ -125,7 +125,7 @@ function Contact() {
                   type="text"
                   id="subject"
                   name="subject"
-                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
+                  className="block w-full pl-10 pr-3 py-2 border text-black border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
                   placeholder="Subject of your message"
                   value={values.subject}
                   onChange={handleChange}
@@ -153,7 +153,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows="4"
-                  className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
+                  className="block w-full pl-10 pr-3 py-2 border text-black border-gray-300 rounded-md leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-violet-500 focus:border-violet-500 transition-all duration-300 sm:text-sm"
                   placeholder="Your message here..."
                   value={values.message}
                   onChange={handleChange}

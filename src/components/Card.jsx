@@ -14,7 +14,7 @@ function Card({ item }) {
 
       <div className='p-4 flex-grow'>
         <h2 className='font-semibold text-lg'>{item.title}</h2>
-        <p className='text-md mt-2'>{item.description.substring(0,100)}</p>
+        <p className='text-md mt-2'>{item.description}</p>
       </div>
 
       <div className='flex flex-row items-center justify-between'>
