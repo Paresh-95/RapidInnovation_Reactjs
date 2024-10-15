@@ -21,7 +21,7 @@ function Home() {
           const response = await axios.get(
             `https://saurav.tech/NewsAPI/top-headlines/category/general/in.json`
           );
-          setNews(response.data.articles);
+          setNews(response.data.articles.slice(0,20));
           setLoading(false);
         } catch (error) {
           console.log("Error Fetching the data ");
