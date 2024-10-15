@@ -14,7 +14,7 @@
       let socket
 
       const connectWebSocket = () => {
-        socket = new WebSocket('ws://localhost:4000')
+        socket = new WebSocket('wss://websocket-demo-production-d3e6.up.railway.app/')
 
         socket.onopen = () => {
           console.log('Connected to WebSocket server')
