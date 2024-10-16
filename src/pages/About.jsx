@@ -159,7 +159,7 @@ export default function About() {
 
         <section>
           {/* <div className="text-black rounded-lg shadow-lg p-8 md:p-12"> */}
-          <div className={theme==='light'?'bg-gray-800 text-white rounded-lg shadow-lg p-6 md:p-12':'bg-[#F6F2F0] text-black  shadow-lg p-6 md:p-12'}>
+          <div className={theme==='light'?'bg-gray-800 text-white rounded-lg shadow-lg p-6 md:p-12':'bg-[#F6F2F0] rounded-lg text-black  shadow-lg p-6 md:p-12'}>
             <h2 className="text-3xl font-bold mb-6 text-center">Contact Me</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="flex items-center">
